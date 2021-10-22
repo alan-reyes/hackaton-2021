@@ -1,0 +1,226 @@
+/* Globales------------------------------------------------- */
+* {
+    text-align: center; 
+    color: #cacaca;
+}
+html{
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;*/
+    font-family: 'Handlee', cursive;
+    font-size: 15px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+}
+img{
+    margin: auto;
+    max-width: 220px;
+    max-height: 220px;
+    width:inherit;
+    height:inherit;
+    object-fit: cover;
+}
+p {
+    text-align: justify;    
+}
+a {
+    text-decoration: none;
+}
+/* header ------------------------------------------------------- */
+header{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* fondo ---------------------------------------------------------------- */
+.background-image {
+    background-image: url(../img/bannerOp1.jpg);
+    background-size: 100%;    
+    left: 0;
+    top: 0;
+    min-height: 554px; /* Verificar que abarque la pantalla completa en todos los dispositivos  */
+    width: 100%;   
+    filter: blur(4px);
+    -webkit-filter: blur(4px);    
+    z-index: -1;
+    background-attachment: fixed;    
+}
+.logo-container {    
+    position: absolute;
+}
+#domain {    
+    display: block;        
+    max-width: 400px; 
+}
+
+/* Bar Nav ---------------------------------------------------- */
+nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6)    
+}
+.bar-nav {
+    position: fixed;
+    top: 0;
+    z-index: 1; /* Permite clickear en cualquier posición de la página */
+    width: 100%;    
+    margin: 0;
+}
+.bar-nav ul {
+    padding-left: 0;
+    overflow: hidden;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    
+}
+.bar-nav ul li {
+    float: left;
+    list-style-type: none;
+    padding: 5px;
+}
+.bar-nav a {
+    display: block;
+    text-align: center;
+    margin: 1px 75px;
+    color: #cacaca;
+    padding: 3px 5px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+.bar-nav a:hover {
+    background-color: #cacaca;
+    color: black;
+    text-decoration: underline;
+}
+/* Secciones ---------------------------------------------------- */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid; 
+    height: 400px;    
+    margin-bottom: 50px;
+
+    min-height: 488px; /* Verificar que abarque la pantalla completa en todos los dispositivos  */
+}
+.name-section {
+    display: flex;    
+    width: 100%;    
+    margin: auto 0;
+}
+.name-section h2 {
+    margin: auto 0;
+    margin-top: 20px;
+}
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    column-gap: 40px;
+}
+#cultura .info {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 40px;
+    place-items: center;
+}
+/* corregir temas de vista */
+#servicios .name-section h2 {
+    margin: auto 0;
+    margin-top: 5px;
+}
+#servicios .name-section h2 {
+    margin: auto 0;
+    margin-top: 5px;
+}
+#servicios {
+    padding-bottom: 50px;
+}
+/* Tarjetas ---------------------------------------------------- */
+.target {
+    /*transition: all box-shadow 0.3s ease;*/
+    background-color: rgba(2, 2, 2, .5);    
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;    
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex-direction: column;    
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+#cultura .target {
+    width: 90%;
+    height: 90%;
+}
+.target img {
+    border-radius: 0.5rem;
+    margin: 0 auto;    
+}
+.target h3, .target p {
+    margin: auto
+}
+.target:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+.target a {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 15px;
+    font-weight: bold; 
+    color: #cacaca;   
+}
+.target a:active {
+    color: #cacaca;
+}
+.target a:visited {
+    color: #cacaca;
+}
+.target a:hover {
+    text-decoration: underline;
+}
+/* Footer ---------------------------------------------------- */
+
+footer{
+    background-color: rgba(2, 2, 2, .5);    
+    color: white;
+}
+footer a{
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+footer a:hover{
+    color: cornflowerblue;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-section {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-items: center;    
+}
+.copy-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    justify-items: center;
+}
+.copy-section p {
+    margin: 20px;
+}
+
