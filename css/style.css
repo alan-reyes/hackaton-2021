@@ -14,7 +14,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background-color: #222;
+    background-color: #222;    
 }
 img{
     margin: auto;
@@ -228,6 +228,7 @@ footer{
     /* nav-bar view */
     .bar-nav a {
         font-size: 1em;
+        margin: 1px 1em;
     }
     /* title to center and less margin */
     .name-section {        
