@@ -127,3 +127,10 @@ nav {
         margin: 1px 1em;
     }
 }
+/*
+@media screen and (max-width: 420px) {
+    nav {
+        visibility: hidden;
+    }
+}
+*/

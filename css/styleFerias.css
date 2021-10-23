@@ -141,4 +141,10 @@ nav {
     /*box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
     transform: scale(1.05);*/
 }
+@media screen and (max-width: 420px) {
+    .bar-nav a {
+        font-size: 0.8rem;
+        margin: 1px 10px;
+    }
+}
 
