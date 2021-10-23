@@ -1,10 +1,32 @@
-/* globales ------------------------------------------------------------*/
-body {
+/* Globales------------------------------------------------- */
+* {
+    text-align: center; 
+    color: #cacaca;
+}
+html{
     margin: 0;
-    background-color: #333c33;   
-    color: #000;
+    padding: 0;
+    /*font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;*/
     font-family: 'Handlee', cursive;
     font-size: 15px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+}
+body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+} /* Evita el scroll a la derecha en movil */
+img{
+    margin: auto;
+    max-width: 220px;
+    max-height: 220px;
+    width:inherit;
+    height:inherit;
+    object-fit: cover;
 }
 p {
     text-align: justify;    
@@ -17,8 +39,8 @@ a {
 header{
     display: flex; 
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: center;    
+    flex-direction: column;    
 }
 /* fondo ---------------------------------------------------------------- */
 .background-image {
@@ -30,8 +52,9 @@ header{
     width: 100%;   
     filter: blur(4px);
     -webkit-filter: blur(4px);    
-    z-index: -1;
-    background-attachment: fixed;    
+    z-index: -1;    
+    background-attachment: fixed;  
+    background-repeat: no-repeat;  
 }
 .logo-container {    
     position: absolute;
@@ -69,17 +92,18 @@ nav {
 .bar-nav a {
     display: block;
     text-align: center;
-    margin: 1px 15px;
+    margin: 1px 1em;
     color: #cacaca;
     padding: 3px 5px;
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;    
 }
 .bar-nav a:hover {
     background-color: #cacaca;
     color: black;
     text-decoration: underline;
 }
+
 .container {
     width: auto;
     margin: auto;
@@ -90,21 +114,21 @@ nav {
 /* cada contenedor --------------------------------------------------------*/
 .post {
     transition: all box-shadow 0.3s ease;
-    background-color:#cacaca;
+    background-color: #222;
     margin: 1rem 0;
     border-radius: 0.5rem;
     padding: 50px 0;    
     padding-top: 0;
     margin-top: 0;    
     text-align: center;
-    margin-bottom: 100px;
-    display: grid;
+    margin-bottom: 100px; 
+    width: 100%;   
 }
 .post h2 {
     margin: 0;
     padding: 20px;
-    background-color: #cacaca;    
-    color: #000;
+    background-color: #222;    
+    color: #cacaca;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -147,13 +171,15 @@ nav {
 }
 /* info section ------------------------------------------------------------ */
 .card {
-    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+    background-color: rgba(2, 2, 2, .5);
+    box-shadow: 0 0.1rem 0.4rem rgba(2, 2, 2, .5);
     margin: 20px;
 
     display: flex;  
     justify-content: center;    
     align-items: center;
     flex-direction: column;    
+    
 }
 .card p {  
     width: 75%;    
@@ -173,6 +199,25 @@ nav {
     align-content: center;
     flex-direction: column;  
     justify-content: flex-start;                
+}
+@media screen and (max-width: 830px) {
+    .bar-nav a {        
+        font-size: 1em; 
+        margin: 0 1em;   
+    }
+}
+@media screen and (max-width: 700px) {
+    .info-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 450px) {
+    .bar-nav a {                
+        margin: 1px 0.2em;        
+        padding: 1px 2px;        
+        font-size: 1rem;    
+    }    
 }
 
 

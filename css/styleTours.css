@@ -1,10 +1,32 @@
-/* globales ------------------------------------------------------------*/
-body {
-    margin: 0;
-    background-color: #222;   
+/* Globales------------------------------------------------- */
+* {
+    text-align: center; 
     color: #cacaca;
+}
+html{
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;*/
     font-family: 'Handlee', cursive;
     font-size: 15px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+}
+body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+} /* Evita el scroll a la derecha en movil */
+img{
+    margin: auto;
+    max-width: 220px;
+    max-height: 220px;
+    width:inherit;
+    height:inherit;
+    object-fit: cover;
 }
 p {
     text-align: justify;    
@@ -17,8 +39,8 @@ a {
 header{
     display: flex; 
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: center;    
+    flex-direction: column;    
 }
 /* fondo ---------------------------------------------------------------- */
 .background-image {
@@ -30,9 +52,9 @@ header{
     width: 100%;   
     filter: blur(4px);
     -webkit-filter: blur(4px);    
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-attachment: fixed;    
+    z-index: -1;    
+    background-attachment: fixed;  
+    background-repeat: no-repeat;  
 }
 .logo-container {    
     position: absolute;
@@ -70,7 +92,7 @@ nav {
 .bar-nav a {
     display: block;
     text-align: center;
-    margin: 1px 50px;
+    margin: 1px 1em;
     color: #cacaca;
     padding: 3px 5px;
     border-radius: 10px;
@@ -99,8 +121,8 @@ nav {
     padding-top: 0;
     margin-top: 0;    
     text-align: center;
-    margin-bottom: 100px;
-    display: grid;
+    margin-bottom: 100px; 
+    width: 100%;   
 }
 .post h2 {
     margin: 0;
@@ -157,6 +179,7 @@ nav {
     justify-content: center;    
     align-items: center;
     flex-direction: column;    
+    
 }
 .card p {  
     width: 75%;    
@@ -177,5 +200,26 @@ nav {
     flex-direction: column;  
     justify-content: flex-start;                
 }
+@media screen and (max-width: 830px) {
+    .bar-nav a {        
+        font-size: 1em; 
+        margin: 0 1em;   
+    }
+}
+@media screen and (max-width: 700px) {
+    .info-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 450px) {
+    .bar-nav a {                
+        margin: 1px 0.2em;        
+        padding: 1px 2px;        
+        font-size: 1rem;    
+    }    
+}
+
+
 
 
